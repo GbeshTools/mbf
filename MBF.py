@@ -283,7 +283,7 @@ def idteman():
 	buka('https://m.facebook.com/friends/center/mbasic/?fb_ref=bm&sr=1&ref_component=mbasic_bookmark&ref_page=XMenuController')
 	jumlah = br.find_link(url_regex='/friends/center/friends/').text
 	jumlah = re.findall(r'\((.*a?)\)',jumlah)[0]
-	cetak('!h[*] Taking !p%s !hid friends''%jumlah) 
+	cetak('!h[*] Taking !p%s !hid friends'%jumlah) 
 	saring_id_teman(buka('https://m.facebook.com/friends/center/friends/?fb_ref=fbm&ref_component=mbasic_bookmark&ref_page=XMenuController'))
 	try:
 		next = br.find_link(url_regex='friends_center_main').url
