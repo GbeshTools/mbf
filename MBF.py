@@ -17,7 +17,7 @@ import cookielib,re,urllib2,urllib,threading
 try:
   import mechanize
 except ImportError:
-	cetak('!m[!] Looks like the !mechanize module hasn't been installed yet install...\n!h[!] pip2 install mechanize')
+	cetak('!m[!] Looks like the !mechanize module hasn not been installed yet install...\n!h[!] pip2 install mechanize')
 	sys.exit()
 br = 0
 log = 0
